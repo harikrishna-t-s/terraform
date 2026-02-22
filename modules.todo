@@ -1,0 +1,99 @@
+# Terraform Modules Refactoring TODO
+
+## 🚨 High Priority - Complete Refactor Needed
+
+### S3 Module
+- [ ] Create README.md using MODULE_TEMPLATE.md
+- [ ] Add versions.tf for provider constraints
+- [ ] Review and standardize variables.tf
+- [ ] Add locals.tf for consistent naming
+- [ ] Validate main.tf structure
+- [ ] Add comprehensive examples
+
+### KMS Module  
+- [ ] Create README.md using MODULE_TEMPLATE.md
+- [ ] Add versions.tf for provider constraints
+- [ ] Add outputs.tf for resource outputs
+- [ ] Add locals.tf for consistent naming
+- [ ] Review and standardize variables.tf
+- [ ] Add comprehensive examples
+
+### Secrets Manager Module
+- [ ] Create README.md using MODULE_TEMPLATE.md
+- [ ] Add versions.tf for provider constraints
+- [ ] Add outputs.tf for resource outputs
+- [ ] Add locals.tf for consistent naming
+- [ ] Review and standardize variables.tf
+- [ ] Add comprehensive examples
+
+### Launch Template Module
+- [ ] Create README.md using MODULE_TEMPLATE.md
+- [ ] Add versions.tf for provider constraints
+- [ ] Add locals.tf for consistent naming
+- [ ] Review and standardize all files
+- [ ] Add comprehensive examples
+
+## ⚠️ Medium Priority - Standardization Required
+
+### Encryption Module
+- [ ] Verify module structure exists
+- [ ] Create README.md using MODULE_TEMPLATE.md
+- [ ] Add missing files (versions.tf, locals.tf, outputs.tf)
+- [ ] Standardize variable naming
+
+### Blue Green Module
+- [ ] Verify module structure
+- [ ] Create README.md using MODULE_TEMPLATE.md
+- [ ] Add missing files (versions.tf, locals.tf)
+- [ ] Standardize variable naming
+
+### CloudWatch Module
+- [ ] Verify module exists and has structure
+- [ ] Create README.md using MODULE_TEMPLATE.md
+- [ ] Add missing files (versions.tf, locals.tf, outputs.tf)
+- [ ] Standardize variable naming
+
+## 📝 Low Priority - Minor Improvements
+
+### All Modules (except asg)
+- [ ] Add versions.tf with provider constraints
+- [ ] Add locals.tf for consistent naming patterns
+- [ ] Standardize variable validation rules
+- [ ] Ensure consistent tagging strategy
+
+### Documentation Updates
+- [ ] Update main README.md with standardized module list
+- [ ] Add module status badges
+- [ ] Create module usage examples
+
+## ✅ Standard Modules (Reference Quality)
+
+These modules are already in good shape and can be used as templates:
+- vpc ✅ (Excellent)
+- database ✅ (Good) 
+- ssm ✅ (Good)
+- alb ✅ (Good)
+- asg ✅ (Good)
+- security_groups ✅ (Good)
+- iam ✅ (Good)
+- security ✅ (Good)
+
+## 📋 Implementation Order
+
+1. **S3** - Core infrastructure, highest priority
+2. **KMS** - Security component, critical
+3. **Secrets Manager** - Security component, important
+4. **Launch Template** - Compute component
+5. **Encryption** - Verify and standardize
+6. **Blue Green** - Verify and standardize
+7. **CloudWatch** - Verify and standardize
+8. **Global improvements** - versions.tf, locals.tf for all modules
+
+## 🎯 Success Criteria
+
+- [ ] All modules have README.md following template
+- [ ] All modules have versions.tf
+- [ ] All modules have consistent file structure
+- [ ] All modules have proper validation
+- [ ] All modules have usage examples
+- [ ] Main README.md updated with current module status

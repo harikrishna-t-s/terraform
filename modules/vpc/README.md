@@ -52,6 +52,7 @@ module "vpc" {
 
 | Name | Version |
 |------|---------|
+
 | terraform | >= 1.0.0 |
 | aws | >= 4.0.0 |
 
@@ -59,6 +60,7 @@ module "vpc" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+
 | environment | Environment name (e.g., dev, staging, prod) | `string` | n/a | yes |
 | vpc_cidr | CIDR block for the VPC | `string` | n/a | yes |
 | public_subnet_cidrs | List of CIDR blocks for public subnets | `list(string)` | n/a | yes |
@@ -71,6 +73,7 @@ module "vpc" {
 
 | Name | Description |
 |------|-------------|
+
 | vpc_id | ID of the VPC |
 | vpc_cidr_block | CIDR block of the VPC |
 | public_subnet_ids | List of public subnet IDs |
@@ -147,7 +150,3 @@ Common issues and solutions:
    - Verify route table associations
    - Check security group rules
    - Validate network ACL configurations
-
-## License
-
-MIT Licensed. See LICENSE for full details. 
